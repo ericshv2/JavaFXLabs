@@ -1,27 +1,39 @@
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class RansomNote extends Application {
 
     @Override
-    public void start(Stage primaryStage) {
-        // Create a simple label
-        Label label = new Label("Hello from RansomNote!");
-        
-        // Create a layout and add the label
-        StackPane root = new StackPane();
-        root.getChildren().add(label);
-        
-        // Create a scene
-        Scene scene = new Scene(root, 400, 300);
-        
-        // Set up the stage
-        primaryStage.setTitle("Ransom Note App");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+    public void start(Stage stage) {
+        Text word1 = new Text("BRING");
+        word1.setFont(Font.loadFont(getClass().getResourceAsStream("/Candy Planet.ttf"), 40));
+        word1.setFill(Color.RED);
+
+        Text word2 = new Text("THE");
+        word2.setFont(Font.loadFont(getClass().getResourceAsStream("/OldLondon.ttf"), 45));
+        word2.setFill(Color.BLUE);
+
+        Text word3 = new Text("COOKIES");
+        word3.setFont(Font.loadFont(getClass().getResourceAsStream("/Cowboy Movie.ttf"), 38));
+        word3.setFill(Color.GREEN);
+
+        Text word4 = new Text("NOW");
+        word4.setFont(Font.loadFont(getClass().getResourceAsStream("/28 Days Later.ttf"), 42));
+        word4.setFill(Color.PURPLE);
+
+        VBox root = new VBox(10);
+        root.getChildren().addAll(word1, word2, word3, word4);
+        root.setStyle("-fx-background-color: white; -fx-padding: 50;");
+
+        Scene scene = new Scene(root, 280, 300);
+        stage.setTitle("Ransom Note");
+        stage.setScene(scene);
+        stage.show();
     }
 
     public static void main(String[] args) {

@@ -13,10 +13,10 @@ public class ParallaxScroll extends Application {
         Pane root = new Pane();
         
         // Load images (4 layers)
-        Image bgImage = new Image(getClass().getResourceAsStream("/Scrolling BG"));
+        Image bgImage = new Image(getClass().getResourceAsStream("/Scrolling BG.jpg"));
         Image cloudsImage = new Image(getClass().getResourceAsStream("/Clouds For Scrolling BG.png"));
-        Image buildingsImage = new Image(getClass().getResourceAsStream("/Buildings For Scrolling BG"));
-        Image grassImage = new Image(getClass().getResourceAsStream("/Grass For Scrolling BG"));
+        Image buildingsImage = new Image(getClass().getResourceAsStream("/Buildings For Scrolling BG.png"));
+        Image grassImage = new Image(getClass().getResourceAsStream("/Grass For Scrolling BG.png"));
         
         // Create image views - 2 copies of each for seamless scrolling
         ImageView bg1 = new ImageView(bgImage);
@@ -48,15 +48,15 @@ public class ParallaxScroll extends Application {
                 bg1.setX(bg1.getX() - 0.5);
                 bg2.setX(bg2.getX() - 0.5);
                 
-                // Move clouds (slow)
-                clouds1.setX(clouds1.getX() - 1);
-                clouds2.setX(clouds2.getX() - 1);
+                // Move clouds (Very Quckly)
+                clouds1.setX(clouds1.getX() - 6.5);
+                clouds2.setX(clouds2.getX() - 6.5);
                 
                 // Move buildings (medium)
                 buildings1.setX(buildings1.getX() - 2);
                 buildings2.setX(buildings2.getX() - 2);
                 
-                // Move grass (fastest)
+                // Move grass (Quick)
                 grass1.setX(grass1.getX() - 3);
                 grass2.setX(grass2.getX() - 3);
                 

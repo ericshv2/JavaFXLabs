@@ -11,19 +11,19 @@ public class RansomNote extends Application {
     @Override
     public void start(Stage stage) {
         Text word1 = new Text("BRING");
-        word1.setFont(Font.loadFont(getClass().getResourceAsStream("/Candy Planet.ttf"), 40));
+        word1.setFont(Font.loadFont(getClass().getResourceAsStream("/Fonts/Candy Planet.ttf"), 40));
         word1.setFill(Color.RED);
 
         Text word2 = new Text("THE");
-        word2.setFont(Font.loadFont(getClass().getResourceAsStream("/OldLondon.ttf"), 45));
+        word2.setFont(Font.loadFont(getClass().getResourceAsStream("/Fonts/OldLondon.ttf"), 45));
         word2.setFill(Color.BLUE);
 
         Text word3 = new Text("COOKIES");
-        word3.setFont(Font.loadFont(getClass().getResourceAsStream("/Cowboy Movie.ttf"), 38));
+        word3.setFont(Font.loadFont(getClass().getResourceAsStream("/Fonts/Cowboy Movie.ttf"), 38));
         word3.setFill(Color.GREEN);
 
         Text word4 = new Text("NOW");
-        word4.setFont(Font.loadFont(getClass().getResourceAsStream("/28 Days Later.ttf"), 42));
+        word4.setFont(Font.loadFont(getClass().getResourceAsStream("/Fonts/28 Days Later.ttf"), 42));
         word4.setFill(Color.PURPLE);
 
         VBox root = new VBox(10);

@@ -16,7 +16,7 @@ public class Soundboard extends Application {
 
         // Title
         Label title = new Label("Goat Soundboard");
-        title.setFont(Font.loadFont(getClass().getResourceAsStream("/28 Days Later.ttf"), 35.67));
+        title.setFont(Font.loadFont(getClass().getResourceAsStream("/Fonts/28 Days Later.ttf"), 35.67));
         title.setLayoutX(250);
         title.setLayoutY(20);
 

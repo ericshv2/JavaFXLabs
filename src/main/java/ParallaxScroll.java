@@ -13,10 +13,10 @@ public class ParallaxScroll extends Application {
         Pane root = new Pane();
         
         // Load images (4 layers)
-        Image bgImage = new Image(getClass().getResourceAsStream("/Scrolling BG.jpg"));
-        Image cloudsImage = new Image(getClass().getResourceAsStream("/Clouds For Scrolling BG.png"));
-        Image buildingsImage = new Image(getClass().getResourceAsStream("/Buildings For Scrolling BG.png"));
-        Image grassImage = new Image(getClass().getResourceAsStream("/Grass For Scrolling BG.png"));
+        Image bgImage = new Image(getClass().getResourceAsStream("/ParallaxBackgroundAssets/Scrolling BG.jpg"));
+        Image cloudsImage = new Image(getClass().getResourceAsStream("/ParallaxBackgroundAssets/Clouds For Scrolling BG.png"));
+        Image buildingsImage = new Image(getClass().getResourceAsStream("/ParallaxBackgroundAssets/Buildings For Scrolling BG.png"));
+        Image grassImage = new Image(getClass().getResourceAsStream("/ParallaxBackgroundAssets/Grass For Scrolling BG.png"));
         
         // Create image views - 2 copies of each for seamless scrolling
         ImageView bg1 = new ImageView(bgImage);

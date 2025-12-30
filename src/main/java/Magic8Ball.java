@@ -47,7 +47,7 @@ public class Magic8Ball extends Application {
         VBox root = new VBox(20);
         root.setAlignment(Pos.CENTER);
         root.getChildren().addAll(ballImage, askButton);
-        root.setStyle("-fx-background-color: black; -fx-padding: 50;");
+        root.setStyle("-fx-background-color: white; -fx-padding: 50;");
         
         Scene scene = new Scene(root, 400, 400);
         stage.setTitle("Magic 8 Ball");

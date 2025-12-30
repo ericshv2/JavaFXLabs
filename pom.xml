@@ -28,6 +28,11 @@
       <artifactId>javafx-fxml</artifactId>
       <version>${javafx.version}</version>
   </dependency>
+  <dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-media</artifactId>
+    <version>${javafx.version}</version>
+</dependency>
   </dependencies>
   <build>
     <plugins>
@@ -37,7 +42,7 @@
         <version>${javafx.maven.plugin.version}</version>
         <configuration>
           <!-- Replace HelloFX with the class name of the main class you wish to run -->
-          <mainClass>Magic8Ball</mainClass>
+          <mainClass>Soundboard</mainClass>
         </configuration>
       </plugin>
     </plugins>
